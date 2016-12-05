@@ -1,0 +1,323 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		75CE04891DF56D0A00BBB700 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CE04881DF56D0A00BBB700 /* AppDelegate.swift */; };
+		75CE048B1DF56D0A00BBB700 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CE048A1DF56D0A00BBB700 /* ViewController.swift */; };
+		75CE048E1DF56D0A00BBB700 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75CE048C1DF56D0A00BBB700 /* Main.storyboard */; };
+		75CE04911DF56D0A00BBB700 /* LeMessenger.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 75CE048F1DF56D0A00BBB700 /* LeMessenger.xcdatamodeld */; };
+		75CE04931DF56D0A00BBB700 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75CE04921DF56D0A00BBB700 /* Assets.xcassets */; };
+		75CE04961DF56D0A00BBB700 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75CE04941DF56D0A00BBB700 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		75CE04851DF56D0A00BBB700 /* LeMessenger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeMessenger.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		75CE04881DF56D0A00BBB700 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		75CE048A1DF56D0A00BBB700 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		75CE048D1DF56D0A00BBB700 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		75CE04901DF56D0A00BBB700 /* LeMessenger.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LeMessenger.xcdatamodel; sourceTree = "<group>"; };
+		75CE04921DF56D0A00BBB700 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		75CE04951DF56D0A00BBB700 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		75CE04971DF56D0A00BBB700 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		75CE04821DF56D0A00BBB700 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		75CE047C1DF56D0A00BBB700 = {
+			isa = PBXGroup;
+			children = (
+				75CE04871DF56D0A00BBB700 /* LeMessenger */,
+				75CE04861DF56D0A00BBB700 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		75CE04861DF56D0A00BBB700 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				75CE04851DF56D0A00BBB700 /* LeMessenger.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		75CE04871DF56D0A00BBB700 /* LeMessenger */ = {
+			isa = PBXGroup;
+			children = (
+				75CE04881DF56D0A00BBB700 /* AppDelegate.swift */,
+				75CE048A1DF56D0A00BBB700 /* ViewController.swift */,
+				75CE048C1DF56D0A00BBB700 /* Main.storyboard */,
+				75CE04921DF56D0A00BBB700 /* Assets.xcassets */,
+				75CE04941DF56D0A00BBB700 /* LaunchScreen.storyboard */,
+				75CE04971DF56D0A00BBB700 /* Info.plist */,
+				75CE048F1DF56D0A00BBB700 /* LeMessenger.xcdatamodeld */,
+			);
+			path = LeMessenger;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		75CE04841DF56D0A00BBB700 /* LeMessenger */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 75CE049A1DF56D0A00BBB700 /* Build configuration list for PBXNativeTarget "LeMessenger" */;
+			buildPhases = (
+				75CE04811DF56D0A00BBB700 /* Sources */,
+				75CE04821DF56D0A00BBB700 /* Frameworks */,
+				75CE04831DF56D0A00BBB700 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LeMessenger;
+			productName = LeMessenger;
+			productReference = 75CE04851DF56D0A00BBB700 /* LeMessenger.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		75CE047D1DF56D0A00BBB700 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = Kaspersky;
+				TargetAttributes = {
+					75CE04841DF56D0A00BBB700 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 75CE04801DF56D0A00BBB700 /* Build configuration list for PBXProject "LeMessenger" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 75CE047C1DF56D0A00BBB700;
+			productRefGroup = 75CE04861DF56D0A00BBB700 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				75CE04841DF56D0A00BBB700 /* LeMessenger */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		75CE04831DF56D0A00BBB700 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75CE04961DF56D0A00BBB700 /* LaunchScreen.storyboard in Resources */,
+				75CE04931DF56D0A00BBB700 /* Assets.xcassets in Resources */,
+				75CE048E1DF56D0A00BBB700 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		75CE04811DF56D0A00BBB700 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75CE04911DF56D0A00BBB700 /* LeMessenger.xcdatamodeld in Sources */,
+				75CE048B1DF56D0A00BBB700 /* ViewController.swift in Sources */,
+				75CE04891DF56D0A00BBB700 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		75CE048C1DF56D0A00BBB700 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				75CE048D1DF56D0A00BBB700 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		75CE04941DF56D0A00BBB700 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				75CE04951DF56D0A00BBB700 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		75CE04981DF56D0A00BBB700 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		75CE04991DF56D0A00BBB700 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		75CE049B1DF56D0A00BBB700 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LeMessenger/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kaspersky.LeMessenger;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		75CE049C1DF56D0A00BBB700 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LeMessenger/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kaspersky.LeMessenger;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		75CE04801DF56D0A00BBB700 /* Build configuration list for PBXProject "LeMessenger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75CE04981DF56D0A00BBB700 /* Debug */,
+				75CE04991DF56D0A00BBB700 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		75CE049A1DF56D0A00BBB700 /* Build configuration list for PBXNativeTarget "LeMessenger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75CE049B1DF56D0A00BBB700 /* Debug */,
+				75CE049C1DF56D0A00BBB700 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		75CE048F1DF56D0A00BBB700 /* LeMessenger.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				75CE04901DF56D0A00BBB700 /* LeMessenger.xcdatamodel */,
+			);
+			currentVersion = 75CE04901DF56D0A00BBB700 /* LeMessenger.xcdatamodel */;
+			path = LeMessenger.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 75CE047D1DF56D0A00BBB700 /* Project object */;
+}
