@@ -7,23 +7,76 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7519C8491DF88ED800427F72 /* Types.h in Sources */ = {isa = PBXBuildFile; fileRef = 7519C8481DF88ED800427F72 /* Types.h */; };
+		7519C8511DF8A20A00427F72 /* MessageContent.m in Sources */ = {isa = PBXBuildFile; fileRef = 7519C8501DF8A20A00427F72 /* MessageContent.m */; };
+		7519C8541DF8A25900427F72 /* Message.m in Sources */ = {isa = PBXBuildFile; fileRef = 7519C8531DF8A25900427F72 /* Message.m */; };
+		7562ABF11DF57E2900FF74DA /* SecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7562ABF01DF57E2900FF74DA /* SecurityPolicy.m */; };
+		7562ABFA1DF580C700FF74DA /* SecurityPolicy+Interop.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7562ABF91DF580C700FF74DA /* SecurityPolicy+Interop.mm */; };
+		7562ABFD1DF5818B00FF74DA /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 7562ABFC1DF5818B00FF74DA /* User.m */; };
+		7562AC001DF583AB00FF74DA /* User+Interop.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7562ABFF1DF583AB00FF74DA /* User+Interop.mm */; };
+		7562AC061DF5886200FF74DA /* NSString+Interop.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7562AC051DF5886200FF74DA /* NSString+Interop.mm */; };
+		7562AC0D1DF60AA100FF74DA /* UsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7562AC0C1DF60AA100FF74DA /* UsersViewController.swift */; };
+		7562AC0F1DF6D47C00FF74DA /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7562AC0E1DF6D47C00FF74DA /* ChatViewController.swift */; };
+		75BB07581DF8B76D00983FAE /* Message+Interop.mm in Sources */ = {isa = PBXBuildFile; fileRef = 75BB07571DF8B76D00983FAE /* Message+Interop.mm */; };
+		75BB075B1DF8B78400983FAE /* MessageContent+Interop.mm in Sources */ = {isa = PBXBuildFile; fileRef = 75BB075A1DF8B78400983FAE /* MessageContent+Interop.mm */; };
+		75BB075E1DF8BF4000983FAE /* NSMutableArray+Interop.mm in Sources */ = {isa = PBXBuildFile; fileRef = 75BB075D1DF8BF4000983FAE /* NSMutableArray+Interop.mm */; };
+		75BB07601DF8C2B500983FAE /* GCD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75BB075F1DF8C2B500983FAE /* GCD.swift */; };
 		75CE04891DF56D0A00BBB700 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CE04881DF56D0A00BBB700 /* AppDelegate.swift */; };
-		75CE048B1DF56D0A00BBB700 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CE048A1DF56D0A00BBB700 /* ViewController.swift */; };
+		75CE048B1DF56D0A00BBB700 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CE048A1DF56D0A00BBB700 /* LoginViewController.swift */; };
 		75CE048E1DF56D0A00BBB700 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75CE048C1DF56D0A00BBB700 /* Main.storyboard */; };
 		75CE04911DF56D0A00BBB700 /* LeMessenger.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 75CE048F1DF56D0A00BBB700 /* LeMessenger.xcdatamodeld */; };
 		75CE04931DF56D0A00BBB700 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75CE04921DF56D0A00BBB700 /* Assets.xcassets */; };
-		75CE04961DF56D0A00BBB700 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75CE04941DF56D0A00BBB700 /* LaunchScreen.storyboard */; };
+		75CE049F1DF56D4D00BBB700 /* libmessenger.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 75CE049E1DF56D4D00BBB700 /* libmessenger.a */; };
+		75CE04AE1DF56DEF00BBB700 /* Messenger.mm in Sources */ = {isa = PBXBuildFile; fileRef = 75CE04AD1DF56DEF00BBB700 /* Messenger.mm */; };
+		75CE04B21DF56E3300BBB700 /* Configuration.m in Sources */ = {isa = PBXBuildFile; fileRef = 75CE04B11DF56E3300BBB700 /* Configuration.m */; };
+		75CE04B51DF56ECC00BBB700 /* Configuration+Interop.mm in Sources */ = {isa = PBXBuildFile; fileRef = 75CE04B41DF56ECC00BBB700 /* Configuration+Interop.mm */; };
+		75CE04BC1DF571B500BBB700 /* libresolv.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 75CE04A01DF56D5500BBB700 /* libresolv.9.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7519C8481DF88ED800427F72 /* Types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Types.h; path = Model/Types.h; sourceTree = "<group>"; };
+		7519C84F1DF8A20A00427F72 /* MessageContent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MessageContent.h; path = Model/MessageContent.h; sourceTree = "<group>"; };
+		7519C8501DF8A20A00427F72 /* MessageContent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MessageContent.m; path = Model/MessageContent.m; sourceTree = "<group>"; };
+		7519C8521DF8A25900427F72 /* Message.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Message.h; path = Model/Message.h; sourceTree = "<group>"; };
+		7519C8531DF8A25900427F72 /* Message.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Message.m; path = Model/Message.m; sourceTree = "<group>"; };
+		7562ABEF1DF57E2900FF74DA /* SecurityPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SecurityPolicy.h; path = Model/SecurityPolicy.h; sourceTree = "<group>"; };
+		7562ABF01DF57E2900FF74DA /* SecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SecurityPolicy.m; path = Model/SecurityPolicy.m; sourceTree = "<group>"; };
+		7562ABF81DF580C700FF74DA /* SecurityPolicy+Interop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "SecurityPolicy+Interop.h"; path = "Categories/SecurityPolicy+Interop.h"; sourceTree = "<group>"; };
+		7562ABF91DF580C700FF74DA /* SecurityPolicy+Interop.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = "SecurityPolicy+Interop.mm"; path = "Categories/SecurityPolicy+Interop.mm"; sourceTree = "<group>"; };
+		7562ABFB1DF5818B00FF74DA /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = User.h; path = Model/User.h; sourceTree = "<group>"; };
+		7562ABFC1DF5818B00FF74DA /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = User.m; path = Model/User.m; sourceTree = "<group>"; };
+		7562ABFE1DF583AB00FF74DA /* User+Interop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "User+Interop.h"; path = "Categories/User+Interop.h"; sourceTree = "<group>"; };
+		7562ABFF1DF583AB00FF74DA /* User+Interop.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = "User+Interop.mm"; path = "Categories/User+Interop.mm"; sourceTree = "<group>"; };
+		7562AC041DF5886200FF74DA /* NSString+Interop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+Interop.h"; path = "Categories/NSString+Interop.h"; sourceTree = "<group>"; };
+		7562AC051DF5886200FF74DA /* NSString+Interop.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = "NSString+Interop.mm"; path = "Categories/NSString+Interop.mm"; sourceTree = "<group>"; };
+		7562AC081DF5C69100FF74DA /* LoginCallback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginCallback.h; path = Model/LoginCallback.h; sourceTree = "<group>"; };
+		7562AC0A1DF5ED1C00FF74DA /* RequestUsersCallback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RequestUsersCallback.h; path = Model/RequestUsersCallback.h; sourceTree = "<group>"; };
+		7562AC0B1DF5F60600FF74DA /* MessagesObserver.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MessagesObserver.h; path = Model/MessagesObserver.h; sourceTree = "<group>"; };
+		7562AC0C1DF60AA100FF74DA /* UsersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersViewController.swift; sourceTree = "<group>"; };
+		7562AC0E1DF6D47C00FF74DA /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		75BB07561DF8B76D00983FAE /* Message+Interop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Message+Interop.h"; path = "Categories/Message+Interop.h"; sourceTree = "<group>"; };
+		75BB07571DF8B76D00983FAE /* Message+Interop.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = "Message+Interop.mm"; path = "Categories/Message+Interop.mm"; sourceTree = "<group>"; };
+		75BB07591DF8B78400983FAE /* MessageContent+Interop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "MessageContent+Interop.h"; path = "Categories/MessageContent+Interop.h"; sourceTree = "<group>"; };
+		75BB075A1DF8B78400983FAE /* MessageContent+Interop.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = "MessageContent+Interop.mm"; path = "Categories/MessageContent+Interop.mm"; sourceTree = "<group>"; };
+		75BB075C1DF8BF4000983FAE /* NSMutableArray+Interop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSMutableArray+Interop.h"; path = "Categories/NSMutableArray+Interop.h"; sourceTree = "<group>"; };
+		75BB075D1DF8BF4000983FAE /* NSMutableArray+Interop.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = "NSMutableArray+Interop.mm"; path = "Categories/NSMutableArray+Interop.mm"; sourceTree = "<group>"; };
+		75BB075F1DF8C2B500983FAE /* GCD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCD.swift; sourceTree = "<group>"; };
 		75CE04851DF56D0A00BBB700 /* LeMessenger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeMessenger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75CE04881DF56D0A00BBB700 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		75CE048A1DF56D0A00BBB700 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		75CE048A1DF56D0A00BBB700 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		75CE048D1DF56D0A00BBB700 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		75CE04901DF56D0A00BBB700 /* LeMessenger.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LeMessenger.xcdatamodel; sourceTree = "<group>"; };
 		75CE04921DF56D0A00BBB700 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		75CE04951DF56D0A00BBB700 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		75CE04971DF56D0A00BBB700 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		75CE049E1DF56D4D00BBB700 /* libmessenger.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libmessenger.a; path = LibMessenger/libmessenger.a; sourceTree = "<group>"; };
+		75CE04A01DF56D5500BBB700 /* libresolv.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.9.tbd; path = usr/lib/libresolv.9.tbd; sourceTree = SDKROOT; };
+		75CE04AB1DF56DEE00BBB700 /* LeMessenger-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LeMessenger-Bridging-Header.h"; sourceTree = "<group>"; };
+		75CE04AC1DF56DEF00BBB700 /* Messenger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Messenger.h; path = Model/Messenger.h; sourceTree = "<group>"; };
+		75CE04AD1DF56DEF00BBB700 /* Messenger.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = Messenger.mm; path = Model/Messenger.mm; sourceTree = "<group>"; };
+		75CE04B01DF56E3300BBB700 /* Configuration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Configuration.h; path = Model/Configuration.h; sourceTree = "<group>"; };
+		75CE04B11DF56E3300BBB700 /* Configuration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Configuration.m; path = Model/Configuration.m; sourceTree = "<group>"; };
+		75CE04B31DF56ECC00BBB700 /* Configuration+Interop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Configuration+Interop.h"; path = "Categories/Configuration+Interop.h"; sourceTree = "<group>"; };
+		75CE04B41DF56ECC00BBB700 /* Configuration+Interop.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = "Configuration+Interop.mm"; path = "Categories/Configuration+Interop.mm"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +84,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75CE04BC1DF571B500BBB700 /* libresolv.9.tbd in Frameworks */,
+				75CE049F1DF56D4D00BBB700 /* libmessenger.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +97,7 @@
 			children = (
 				75CE04871DF56D0A00BBB700 /* LeMessenger */,
 				75CE04861DF56D0A00BBB700 /* Products */,
+				75CE049D1DF56D4C00BBB700 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +112,81 @@
 		75CE04871DF56D0A00BBB700 /* LeMessenger */ = {
 			isa = PBXGroup;
 			children = (
+				75CE04AB1DF56DEE00BBB700 /* LeMessenger-Bridging-Header.h */,
+				75CE04A41DF56D9700BBB700 /* Categories */,
+				75CE04A31DF56D8C00BBB700 /* Model */,
+				75CE04A21DF56D8400BBB700 /* UI */,
 				75CE04881DF56D0A00BBB700 /* AppDelegate.swift */,
-				75CE048A1DF56D0A00BBB700 /* ViewController.swift */,
 				75CE048C1DF56D0A00BBB700 /* Main.storyboard */,
 				75CE04921DF56D0A00BBB700 /* Assets.xcassets */,
-				75CE04941DF56D0A00BBB700 /* LaunchScreen.storyboard */,
 				75CE04971DF56D0A00BBB700 /* Info.plist */,
 				75CE048F1DF56D0A00BBB700 /* LeMessenger.xcdatamodeld */,
+				75BB075F1DF8C2B500983FAE /* GCD.swift */,
 			);
 			path = LeMessenger;
+			sourceTree = "<group>";
+		};
+		75CE049D1DF56D4C00BBB700 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				75CE04A01DF56D5500BBB700 /* libresolv.9.tbd */,
+				75CE049E1DF56D4D00BBB700 /* libmessenger.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		75CE04A21DF56D8400BBB700 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				75CE048A1DF56D0A00BBB700 /* LoginViewController.swift */,
+				7562AC0C1DF60AA100FF74DA /* UsersViewController.swift */,
+				7562AC0E1DF6D47C00FF74DA /* ChatViewController.swift */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		75CE04A31DF56D8C00BBB700 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				75CE04AC1DF56DEF00BBB700 /* Messenger.h */,
+				75CE04AD1DF56DEF00BBB700 /* Messenger.mm */,
+				75CE04B01DF56E3300BBB700 /* Configuration.h */,
+				75CE04B11DF56E3300BBB700 /* Configuration.m */,
+				7562ABEF1DF57E2900FF74DA /* SecurityPolicy.h */,
+				7562ABF01DF57E2900FF74DA /* SecurityPolicy.m */,
+				7562ABFB1DF5818B00FF74DA /* User.h */,
+				7562ABFC1DF5818B00FF74DA /* User.m */,
+				7562AC081DF5C69100FF74DA /* LoginCallback.h */,
+				7562AC0A1DF5ED1C00FF74DA /* RequestUsersCallback.h */,
+				7562AC0B1DF5F60600FF74DA /* MessagesObserver.h */,
+				7519C8481DF88ED800427F72 /* Types.h */,
+				7519C84F1DF8A20A00427F72 /* MessageContent.h */,
+				7519C8501DF8A20A00427F72 /* MessageContent.m */,
+				7519C8521DF8A25900427F72 /* Message.h */,
+				7519C8531DF8A25900427F72 /* Message.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		75CE04A41DF56D9700BBB700 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				75CE04B31DF56ECC00BBB700 /* Configuration+Interop.h */,
+				75CE04B41DF56ECC00BBB700 /* Configuration+Interop.mm */,
+				7562ABF81DF580C700FF74DA /* SecurityPolicy+Interop.h */,
+				7562ABF91DF580C700FF74DA /* SecurityPolicy+Interop.mm */,
+				7562ABFE1DF583AB00FF74DA /* User+Interop.h */,
+				7562ABFF1DF583AB00FF74DA /* User+Interop.mm */,
+				7562AC041DF5886200FF74DA /* NSString+Interop.h */,
+				7562AC051DF5886200FF74DA /* NSString+Interop.mm */,
+				75BB07561DF8B76D00983FAE /* Message+Interop.h */,
+				75BB07571DF8B76D00983FAE /* Message+Interop.mm */,
+				75BB07591DF8B78400983FAE /* MessageContent+Interop.h */,
+				75BB075A1DF8B78400983FAE /* MessageContent+Interop.mm */,
+				75BB075C1DF8BF4000983FAE /* NSMutableArray+Interop.h */,
+				75BB075D1DF8BF4000983FAE /* NSMutableArray+Interop.mm */,
+			);
+			name = Categories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -99,6 +221,7 @@
 				TargetAttributes = {
 					75CE04841DF56D0A00BBB700 = {
 						CreatedOnToolsVersion = 8.0;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -126,7 +249,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				75CE04961DF56D0A00BBB700 /* LaunchScreen.storyboard in Resources */,
 				75CE04931DF56D0A00BBB700 /* Assets.xcassets in Resources */,
 				75CE048E1DF56D0A00BBB700 /* Main.storyboard in Resources */,
 			);
@@ -139,9 +261,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7562ABF11DF57E2900FF74DA /* SecurityPolicy.m in Sources */,
+				75BB075B1DF8B78400983FAE /* MessageContent+Interop.mm in Sources */,
+				7562AC0D1DF60AA100FF74DA /* UsersViewController.swift in Sources */,
+				7562ABFA1DF580C700FF74DA /* SecurityPolicy+Interop.mm in Sources */,
+				75CE04B21DF56E3300BBB700 /* Configuration.m in Sources */,
+				7562AC001DF583AB00FF74DA /* User+Interop.mm in Sources */,
+				7519C8491DF88ED800427F72 /* Types.h in Sources */,
 				75CE04911DF56D0A00BBB700 /* LeMessenger.xcdatamodeld in Sources */,
-				75CE048B1DF56D0A00BBB700 /* ViewController.swift in Sources */,
+				75BB075E1DF8BF4000983FAE /* NSMutableArray+Interop.mm in Sources */,
+				75CE048B1DF56D0A00BBB700 /* LoginViewController.swift in Sources */,
+				75BB07601DF8C2B500983FAE /* GCD.swift in Sources */,
+				7519C8511DF8A20A00427F72 /* MessageContent.m in Sources */,
+				7519C8541DF8A25900427F72 /* Message.m in Sources */,
+				7562ABFD1DF5818B00FF74DA /* User.m in Sources */,
 				75CE04891DF56D0A00BBB700 /* AppDelegate.swift in Sources */,
+				75BB07581DF8B76D00983FAE /* Message+Interop.mm in Sources */,
+				7562AC0F1DF6D47C00FF74DA /* ChatViewController.swift in Sources */,
+				75CE04B51DF56ECC00BBB700 /* Configuration+Interop.mm in Sources */,
+				75CE04AE1DF56DEF00BBB700 /* Messenger.mm in Sources */,
+				7562AC061DF5886200FF74DA /* NSString+Interop.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,14 +293,6 @@
 				75CE048D1DF56D0A00BBB700 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		75CE04941DF56D0A00BBB700 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				75CE04951DF56D0A00BBB700 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -212,6 +343,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "/LeMessenger/LeMessenger-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -254,6 +386,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "/LeMessenger/LeMessenger-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -264,10 +397,21 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/LibMessenger/include",
+				);
 				INFOPLIST_FILE = LeMessenger/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/LibMessenger",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.kaspersky.LeMessenger;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LeMessenger/LeMessenger-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -276,10 +420,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/LibMessenger/include",
+				);
 				INFOPLIST_FILE = LeMessenger/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/LibMessenger",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.kaspersky.LeMessenger;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LeMessenger/LeMessenger-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -303,6 +457,7 @@
 				75CE049C1DF56D0A00BBB700 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
