@@ -53,7 +53,7 @@ class ChatViewController: UIViewController {
         let imagePicker = UIImagePickerController()
         imagePicker.delegate = self
         imagePicker.sourceType = .photoLibrary
-        self.present(imagePicker, animated: true) { 
+        self.present(imagePicker, animated: true) {
             self.reload(scrollToBottom: true)
         }
     }
