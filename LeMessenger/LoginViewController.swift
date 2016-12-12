@@ -27,11 +27,11 @@ class LoginViewController: UIViewController {
         
         //TODO: Check if empty
         
-        let messenger = Messenger.shared()!
-        messenger.login(withUserId: username, password: password) { (result) in
+        AuthController.shared.login(username: username, password: password) { (result) in
             switch result {
             case .Ok:
                 performUIUpdatesOnMain {
+                    MessageController.shared.subscribeToMessagesNotifications()
                     let controller = self.storyboard?.instantiateViewController(withIdentifier: "UsersNavigatorController") as! UINavigationController
                     self.present(controller, animated: true, completion: nil)
                 }
@@ -44,7 +44,7 @@ class LoginViewController: UIViewController {
             case .InternalError:
                 self.connectButton.isEnabled = true
                 break
-            //TODO: Show error message
+                //TODO: Show error message
             }
         }
     }

@@ -7,3 +7,5 @@
 #import "SecurityPolicy.h"
 #import "Types.h"
 #import "User.h"
+#import "Message.h"
+#import "MessageContent.h"

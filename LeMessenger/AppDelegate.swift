@@ -14,9 +14,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        if !UserDefaults.standard.bool(forKey: "HasLaunchedBefore") {
+            let serverUrl = "127.0.0.1"
+            let serverPort = 0
+            UserDefaults.standard.set(true, forKey: "HasLaunchedBefore")
+            UserDefaults.standard.set(serverUrl, forKey: "Server Url")
+            UserDefaults.standard.set(serverPort, forKey: "Server Port")
+            UserDefaults.standard.synchronize()
+        }
         return true
     }
 

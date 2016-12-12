@@ -7,59 +7,127 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7519C8491DF88ED800427F72 /* Types.h in Sources */ = {isa = PBXBuildFile; fileRef = 7519C8481DF88ED800427F72 /* Types.h */; };
-		7519C8511DF8A20A00427F72 /* MessageContent.m in Sources */ = {isa = PBXBuildFile; fileRef = 7519C8501DF8A20A00427F72 /* MessageContent.m */; };
-		7519C8541DF8A25900427F72 /* Message.m in Sources */ = {isa = PBXBuildFile; fileRef = 7519C8531DF8A25900427F72 /* Message.m */; };
-		7562ABF11DF57E2900FF74DA /* SecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7562ABF01DF57E2900FF74DA /* SecurityPolicy.m */; };
-		7562ABFA1DF580C700FF74DA /* SecurityPolicy+Interop.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7562ABF91DF580C700FF74DA /* SecurityPolicy+Interop.mm */; };
-		7562ABFD1DF5818B00FF74DA /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 7562ABFC1DF5818B00FF74DA /* User.m */; };
-		7562AC001DF583AB00FF74DA /* User+Interop.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7562ABFF1DF583AB00FF74DA /* User+Interop.mm */; };
-		7562AC061DF5886200FF74DA /* NSString+Interop.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7562AC051DF5886200FF74DA /* NSString+Interop.mm */; };
+		7527EF891DFDA053009FF0D6 /* AuthController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7527EF881DFDA053009FF0D6 /* AuthController.swift */; };
+		7527EF8C1DFDA5A0009FF0D6 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7527EF8B1DFDA5A0009FF0D6 /* Storage.swift */; };
+		7527EF8E1DFDC250009FF0D6 /* UserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7527EF8D1DFDC250009FF0D6 /* UserController.swift */; };
+		754FF6931DFC890500ACADAC /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754FF6921DFC890500ACADAC /* CoreDataStack.swift */; };
+		754FF6991DFD5D1A00ACADAC /* ServerSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754FF6981DFD5D1A00ACADAC /* ServerSettingsViewController.swift */; };
+		754FF6A31DFD7E0B00ACADAC /* MessengerKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 754FF6A11DFD7E0B00ACADAC /* MessengerKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		754FF6A61DFD7E0B00ACADAC /* MessengerKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 754FF69F1DFD7E0B00ACADAC /* MessengerKit.framework */; };
+		754FF6A71DFD7E0B00ACADAC /* MessengerKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 754FF69F1DFD7E0B00ACADAC /* MessengerKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		754FF6AC1DFD81D400ACADAC /* libresolv.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 75CE04A01DF56D5500BBB700 /* libresolv.9.tbd */; };
+		754FF6AD1DFD81F100ACADAC /* libmessenger.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 75CE049E1DF56D4D00BBB700 /* libmessenger.a */; };
+		754FF6D11DFD84A300ACADAC /* Configuration.h in Headers */ = {isa = PBXBuildFile; fileRef = 754FF6AF1DFD84A300ACADAC /* Configuration.h */; };
+		754FF6D21DFD84A300ACADAC /* Configuration.m in Sources */ = {isa = PBXBuildFile; fileRef = 754FF6B01DFD84A300ACADAC /* Configuration.m */; };
+		754FF6D41DFD84A300ACADAC /* LoginCallback.h in Headers */ = {isa = PBXBuildFile; fileRef = 754FF6B21DFD84A300ACADAC /* LoginCallback.h */; };
+		754FF6D51DFD84A300ACADAC /* Message.h in Headers */ = {isa = PBXBuildFile; fileRef = 754FF6B31DFD84A300ACADAC /* Message.h */; };
+		754FF6D61DFD84A300ACADAC /* Message.m in Sources */ = {isa = PBXBuildFile; fileRef = 754FF6B41DFD84A300ACADAC /* Message.m */; };
+		754FF6D71DFD84A300ACADAC /* MessageContent.h in Headers */ = {isa = PBXBuildFile; fileRef = 754FF6B51DFD84A300ACADAC /* MessageContent.h */; };
+		754FF6D81DFD84A300ACADAC /* MessageContent.m in Sources */ = {isa = PBXBuildFile; fileRef = 754FF6B61DFD84A300ACADAC /* MessageContent.m */; };
+		754FF6D91DFD84A300ACADAC /* MessagesObserver.h in Headers */ = {isa = PBXBuildFile; fileRef = 754FF6B71DFD84A300ACADAC /* MessagesObserver.h */; };
+		754FF6DA1DFD84A300ACADAC /* MessageStatusNotification.h in Headers */ = {isa = PBXBuildFile; fileRef = 754FF6B81DFD84A300ACADAC /* MessageStatusNotification.h */; };
+		754FF6DB1DFD84A300ACADAC /* MessageStatusNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 754FF6B91DFD84A300ACADAC /* MessageStatusNotification.m */; };
+		754FF6DC1DFD84A300ACADAC /* Messenger.h in Headers */ = {isa = PBXBuildFile; fileRef = 754FF6BA1DFD84A300ACADAC /* Messenger.h */; };
+		754FF6DD1DFD84A300ACADAC /* Messenger.mm in Sources */ = {isa = PBXBuildFile; fileRef = 754FF6BB1DFD84A300ACADAC /* Messenger.mm */; };
+		754FF6DE1DFD84A300ACADAC /* RequestUsersCallback.h in Headers */ = {isa = PBXBuildFile; fileRef = 754FF6BC1DFD84A300ACADAC /* RequestUsersCallback.h */; };
+		754FF6DF1DFD84A300ACADAC /* SecurityPolicy.h in Headers */ = {isa = PBXBuildFile; fileRef = 754FF6BD1DFD84A300ACADAC /* SecurityPolicy.h */; };
+		754FF6E01DFD84A300ACADAC /* SecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 754FF6BE1DFD84A300ACADAC /* SecurityPolicy.m */; };
+		754FF6E11DFD84A300ACADAC /* Types.h in Headers */ = {isa = PBXBuildFile; fileRef = 754FF6BF1DFD84A300ACADAC /* Types.h */; };
+		754FF6E21DFD84A300ACADAC /* User.h in Headers */ = {isa = PBXBuildFile; fileRef = 754FF6C01DFD84A300ACADAC /* User.h */; };
+		754FF6E31DFD84A300ACADAC /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 754FF6C11DFD84A300ACADAC /* User.m */; };
+		754FF6E41DFD84A300ACADAC /* Configuration+Interop.h in Headers */ = {isa = PBXBuildFile; fileRef = 754FF6C31DFD84A300ACADAC /* Configuration+Interop.h */; };
+		754FF6E51DFD84A300ACADAC /* Configuration+Interop.mm in Sources */ = {isa = PBXBuildFile; fileRef = 754FF6C41DFD84A300ACADAC /* Configuration+Interop.mm */; };
+		754FF6E61DFD84A300ACADAC /* Message+Interop.h in Headers */ = {isa = PBXBuildFile; fileRef = 754FF6C51DFD84A300ACADAC /* Message+Interop.h */; };
+		754FF6E71DFD84A300ACADAC /* Message+Interop.mm in Sources */ = {isa = PBXBuildFile; fileRef = 754FF6C61DFD84A300ACADAC /* Message+Interop.mm */; };
+		754FF6E81DFD84A300ACADAC /* MessageContent+Interop.h in Headers */ = {isa = PBXBuildFile; fileRef = 754FF6C71DFD84A300ACADAC /* MessageContent+Interop.h */; };
+		754FF6E91DFD84A300ACADAC /* MessageContent+Interop.mm in Sources */ = {isa = PBXBuildFile; fileRef = 754FF6C81DFD84A300ACADAC /* MessageContent+Interop.mm */; };
+		754FF6EA1DFD84A300ACADAC /* NSMutableArray+Interop.h in Headers */ = {isa = PBXBuildFile; fileRef = 754FF6C91DFD84A300ACADAC /* NSMutableArray+Interop.h */; };
+		754FF6EB1DFD84A300ACADAC /* NSMutableArray+Interop.mm in Sources */ = {isa = PBXBuildFile; fileRef = 754FF6CA1DFD84A300ACADAC /* NSMutableArray+Interop.mm */; };
+		754FF6EC1DFD84A300ACADAC /* NSString+Interop.h in Headers */ = {isa = PBXBuildFile; fileRef = 754FF6CB1DFD84A300ACADAC /* NSString+Interop.h */; };
+		754FF6ED1DFD84A300ACADAC /* NSString+Interop.mm in Sources */ = {isa = PBXBuildFile; fileRef = 754FF6CC1DFD84A300ACADAC /* NSString+Interop.mm */; };
+		754FF6EE1DFD84A300ACADAC /* SecurityPolicy+Interop.h in Headers */ = {isa = PBXBuildFile; fileRef = 754FF6CD1DFD84A300ACADAC /* SecurityPolicy+Interop.h */; };
+		754FF6EF1DFD84A300ACADAC /* SecurityPolicy+Interop.mm in Sources */ = {isa = PBXBuildFile; fileRef = 754FF6CE1DFD84A300ACADAC /* SecurityPolicy+Interop.mm */; };
+		754FF6F01DFD84A300ACADAC /* User+Interop.h in Headers */ = {isa = PBXBuildFile; fileRef = 754FF6CF1DFD84A300ACADAC /* User+Interop.h */; };
+		754FF6F11DFD84A300ACADAC /* User+Interop.mm in Sources */ = {isa = PBXBuildFile; fileRef = 754FF6D01DFD84A300ACADAC /* User+Interop.mm */; };
+		754FF6F41DFD951500ACADAC /* MessageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754FF6F31DFD951500ACADAC /* MessageController.swift */; };
 		7562AC0D1DF60AA100FF74DA /* UsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7562AC0C1DF60AA100FF74DA /* UsersViewController.swift */; };
 		7562AC0F1DF6D47C00FF74DA /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7562AC0E1DF6D47C00FF74DA /* ChatViewController.swift */; };
-		75BB07581DF8B76D00983FAE /* Message+Interop.mm in Sources */ = {isa = PBXBuildFile; fileRef = 75BB07571DF8B76D00983FAE /* Message+Interop.mm */; };
-		75BB075B1DF8B78400983FAE /* MessageContent+Interop.mm in Sources */ = {isa = PBXBuildFile; fileRef = 75BB075A1DF8B78400983FAE /* MessageContent+Interop.mm */; };
-		75BB075E1DF8BF4000983FAE /* NSMutableArray+Interop.mm in Sources */ = {isa = PBXBuildFile; fileRef = 75BB075D1DF8BF4000983FAE /* NSMutableArray+Interop.mm */; };
 		75BB07601DF8C2B500983FAE /* GCD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75BB075F1DF8C2B500983FAE /* GCD.swift */; };
 		75CE04891DF56D0A00BBB700 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CE04881DF56D0A00BBB700 /* AppDelegate.swift */; };
 		75CE048B1DF56D0A00BBB700 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CE048A1DF56D0A00BBB700 /* LoginViewController.swift */; };
 		75CE048E1DF56D0A00BBB700 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75CE048C1DF56D0A00BBB700 /* Main.storyboard */; };
 		75CE04911DF56D0A00BBB700 /* LeMessenger.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 75CE048F1DF56D0A00BBB700 /* LeMessenger.xcdatamodeld */; };
 		75CE04931DF56D0A00BBB700 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75CE04921DF56D0A00BBB700 /* Assets.xcassets */; };
-		75CE049F1DF56D4D00BBB700 /* libmessenger.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 75CE049E1DF56D4D00BBB700 /* libmessenger.a */; };
-		75CE04AE1DF56DEF00BBB700 /* Messenger.mm in Sources */ = {isa = PBXBuildFile; fileRef = 75CE04AD1DF56DEF00BBB700 /* Messenger.mm */; };
-		75CE04B21DF56E3300BBB700 /* Configuration.m in Sources */ = {isa = PBXBuildFile; fileRef = 75CE04B11DF56E3300BBB700 /* Configuration.m */; };
-		75CE04B51DF56ECC00BBB700 /* Configuration+Interop.mm in Sources */ = {isa = PBXBuildFile; fileRef = 75CE04B41DF56ECC00BBB700 /* Configuration+Interop.mm */; };
-		75CE04BC1DF571B500BBB700 /* libresolv.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 75CE04A01DF56D5500BBB700 /* libresolv.9.tbd */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		754FF6A41DFD7E0B00ACADAC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 75CE047D1DF56D0A00BBB700 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 754FF69E1DFD7E0B00ACADAC;
+			remoteInfo = MessengerKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		754FF6AB1DFD7E0B00ACADAC /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				754FF6A71DFD7E0B00ACADAC /* MessengerKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		7519C8481DF88ED800427F72 /* Types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Types.h; path = Model/Types.h; sourceTree = "<group>"; };
-		7519C84F1DF8A20A00427F72 /* MessageContent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MessageContent.h; path = Model/MessageContent.h; sourceTree = "<group>"; };
-		7519C8501DF8A20A00427F72 /* MessageContent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MessageContent.m; path = Model/MessageContent.m; sourceTree = "<group>"; };
-		7519C8521DF8A25900427F72 /* Message.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Message.h; path = Model/Message.h; sourceTree = "<group>"; };
-		7519C8531DF8A25900427F72 /* Message.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Message.m; path = Model/Message.m; sourceTree = "<group>"; };
-		7562ABEF1DF57E2900FF74DA /* SecurityPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SecurityPolicy.h; path = Model/SecurityPolicy.h; sourceTree = "<group>"; };
-		7562ABF01DF57E2900FF74DA /* SecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SecurityPolicy.m; path = Model/SecurityPolicy.m; sourceTree = "<group>"; };
-		7562ABF81DF580C700FF74DA /* SecurityPolicy+Interop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "SecurityPolicy+Interop.h"; path = "Categories/SecurityPolicy+Interop.h"; sourceTree = "<group>"; };
-		7562ABF91DF580C700FF74DA /* SecurityPolicy+Interop.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = "SecurityPolicy+Interop.mm"; path = "Categories/SecurityPolicy+Interop.mm"; sourceTree = "<group>"; };
-		7562ABFB1DF5818B00FF74DA /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = User.h; path = Model/User.h; sourceTree = "<group>"; };
-		7562ABFC1DF5818B00FF74DA /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = User.m; path = Model/User.m; sourceTree = "<group>"; };
-		7562ABFE1DF583AB00FF74DA /* User+Interop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "User+Interop.h"; path = "Categories/User+Interop.h"; sourceTree = "<group>"; };
-		7562ABFF1DF583AB00FF74DA /* User+Interop.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = "User+Interop.mm"; path = "Categories/User+Interop.mm"; sourceTree = "<group>"; };
-		7562AC041DF5886200FF74DA /* NSString+Interop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+Interop.h"; path = "Categories/NSString+Interop.h"; sourceTree = "<group>"; };
-		7562AC051DF5886200FF74DA /* NSString+Interop.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = "NSString+Interop.mm"; path = "Categories/NSString+Interop.mm"; sourceTree = "<group>"; };
-		7562AC081DF5C69100FF74DA /* LoginCallback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginCallback.h; path = Model/LoginCallback.h; sourceTree = "<group>"; };
-		7562AC0A1DF5ED1C00FF74DA /* RequestUsersCallback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RequestUsersCallback.h; path = Model/RequestUsersCallback.h; sourceTree = "<group>"; };
-		7562AC0B1DF5F60600FF74DA /* MessagesObserver.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MessagesObserver.h; path = Model/MessagesObserver.h; sourceTree = "<group>"; };
+		7527EF881DFDA053009FF0D6 /* AuthController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AuthController.swift; path = Controller/AuthController.swift; sourceTree = "<group>"; };
+		7527EF8B1DFDA5A0009FF0D6 /* Storage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Storage.swift; path = LeMessenger/CoreData/Storage.swift; sourceTree = "<group>"; };
+		7527EF8D1DFDC250009FF0D6 /* UserController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserController.swift; path = Controller/UserController.swift; sourceTree = "<group>"; };
+		754FF6921DFC890500ACADAC /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		754FF6981DFD5D1A00ACADAC /* ServerSettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerSettingsViewController.swift; sourceTree = "<group>"; };
+		754FF69F1DFD7E0B00ACADAC /* MessengerKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MessengerKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		754FF6A11DFD7E0B00ACADAC /* MessengerKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MessengerKit.h; sourceTree = "<group>"; };
+		754FF6A21DFD7E0B00ACADAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		754FF6AF1DFD84A300ACADAC /* Configuration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Configuration.h; sourceTree = "<group>"; };
+		754FF6B01DFD84A300ACADAC /* Configuration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Configuration.m; sourceTree = "<group>"; };
+		754FF6B21DFD84A300ACADAC /* LoginCallback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginCallback.h; sourceTree = "<group>"; };
+		754FF6B31DFD84A300ACADAC /* Message.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Message.h; sourceTree = "<group>"; };
+		754FF6B41DFD84A300ACADAC /* Message.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Message.m; sourceTree = "<group>"; };
+		754FF6B51DFD84A300ACADAC /* MessageContent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageContent.h; sourceTree = "<group>"; };
+		754FF6B61DFD84A300ACADAC /* MessageContent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageContent.m; sourceTree = "<group>"; };
+		754FF6B71DFD84A300ACADAC /* MessagesObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessagesObserver.h; sourceTree = "<group>"; };
+		754FF6B81DFD84A300ACADAC /* MessageStatusNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageStatusNotification.h; sourceTree = "<group>"; };
+		754FF6B91DFD84A300ACADAC /* MessageStatusNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageStatusNotification.m; sourceTree = "<group>"; };
+		754FF6BA1DFD84A300ACADAC /* Messenger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Messenger.h; sourceTree = "<group>"; };
+		754FF6BB1DFD84A300ACADAC /* Messenger.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Messenger.mm; sourceTree = "<group>"; };
+		754FF6BC1DFD84A300ACADAC /* RequestUsersCallback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestUsersCallback.h; sourceTree = "<group>"; };
+		754FF6BD1DFD84A300ACADAC /* SecurityPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecurityPolicy.h; sourceTree = "<group>"; };
+		754FF6BE1DFD84A300ACADAC /* SecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecurityPolicy.m; sourceTree = "<group>"; };
+		754FF6BF1DFD84A300ACADAC /* Types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Types.h; sourceTree = "<group>"; };
+		754FF6C01DFD84A300ACADAC /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		754FF6C11DFD84A300ACADAC /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		754FF6C31DFD84A300ACADAC /* Configuration+Interop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Configuration+Interop.h"; sourceTree = "<group>"; };
+		754FF6C41DFD84A300ACADAC /* Configuration+Interop.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "Configuration+Interop.mm"; sourceTree = "<group>"; };
+		754FF6C51DFD84A300ACADAC /* Message+Interop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Message+Interop.h"; sourceTree = "<group>"; };
+		754FF6C61DFD84A300ACADAC /* Message+Interop.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "Message+Interop.mm"; sourceTree = "<group>"; };
+		754FF6C71DFD84A300ACADAC /* MessageContent+Interop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MessageContent+Interop.h"; sourceTree = "<group>"; };
+		754FF6C81DFD84A300ACADAC /* MessageContent+Interop.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "MessageContent+Interop.mm"; sourceTree = "<group>"; };
+		754FF6C91DFD84A300ACADAC /* NSMutableArray+Interop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+Interop.h"; sourceTree = "<group>"; };
+		754FF6CA1DFD84A300ACADAC /* NSMutableArray+Interop.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "NSMutableArray+Interop.mm"; sourceTree = "<group>"; };
+		754FF6CB1DFD84A300ACADAC /* NSString+Interop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Interop.h"; sourceTree = "<group>"; };
+		754FF6CC1DFD84A300ACADAC /* NSString+Interop.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "NSString+Interop.mm"; sourceTree = "<group>"; };
+		754FF6CD1DFD84A300ACADAC /* SecurityPolicy+Interop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SecurityPolicy+Interop.h"; sourceTree = "<group>"; };
+		754FF6CE1DFD84A300ACADAC /* SecurityPolicy+Interop.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "SecurityPolicy+Interop.mm"; sourceTree = "<group>"; };
+		754FF6CF1DFD84A300ACADAC /* User+Interop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "User+Interop.h"; sourceTree = "<group>"; };
+		754FF6D01DFD84A300ACADAC /* User+Interop.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "User+Interop.mm"; sourceTree = "<group>"; };
+		754FF6F31DFD951500ACADAC /* MessageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MessageController.swift; path = Controller/MessageController.swift; sourceTree = "<group>"; };
 		7562AC0C1DF60AA100FF74DA /* UsersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersViewController.swift; sourceTree = "<group>"; };
 		7562AC0E1DF6D47C00FF74DA /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
-		75BB07561DF8B76D00983FAE /* Message+Interop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Message+Interop.h"; path = "Categories/Message+Interop.h"; sourceTree = "<group>"; };
-		75BB07571DF8B76D00983FAE /* Message+Interop.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = "Message+Interop.mm"; path = "Categories/Message+Interop.mm"; sourceTree = "<group>"; };
-		75BB07591DF8B78400983FAE /* MessageContent+Interop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "MessageContent+Interop.h"; path = "Categories/MessageContent+Interop.h"; sourceTree = "<group>"; };
-		75BB075A1DF8B78400983FAE /* MessageContent+Interop.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = "MessageContent+Interop.mm"; path = "Categories/MessageContent+Interop.mm"; sourceTree = "<group>"; };
-		75BB075C1DF8BF4000983FAE /* NSMutableArray+Interop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSMutableArray+Interop.h"; path = "Categories/NSMutableArray+Interop.h"; sourceTree = "<group>"; };
-		75BB075D1DF8BF4000983FAE /* NSMutableArray+Interop.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = "NSMutableArray+Interop.mm"; path = "Categories/NSMutableArray+Interop.mm"; sourceTree = "<group>"; };
 		75BB075F1DF8C2B500983FAE /* GCD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCD.swift; sourceTree = "<group>"; };
 		75CE04851DF56D0A00BBB700 /* LeMessenger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeMessenger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75CE04881DF56D0A00BBB700 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -70,32 +138,119 @@
 		75CE04971DF56D0A00BBB700 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		75CE049E1DF56D4D00BBB700 /* libmessenger.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libmessenger.a; path = LibMessenger/libmessenger.a; sourceTree = "<group>"; };
 		75CE04A01DF56D5500BBB700 /* libresolv.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.9.tbd; path = usr/lib/libresolv.9.tbd; sourceTree = SDKROOT; };
-		75CE04AB1DF56DEE00BBB700 /* LeMessenger-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LeMessenger-Bridging-Header.h"; sourceTree = "<group>"; };
-		75CE04AC1DF56DEF00BBB700 /* Messenger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Messenger.h; path = Model/Messenger.h; sourceTree = "<group>"; };
-		75CE04AD1DF56DEF00BBB700 /* Messenger.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = Messenger.mm; path = Model/Messenger.mm; sourceTree = "<group>"; };
-		75CE04B01DF56E3300BBB700 /* Configuration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Configuration.h; path = Model/Configuration.h; sourceTree = "<group>"; };
-		75CE04B11DF56E3300BBB700 /* Configuration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Configuration.m; path = Model/Configuration.m; sourceTree = "<group>"; };
-		75CE04B31DF56ECC00BBB700 /* Configuration+Interop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Configuration+Interop.h"; path = "Categories/Configuration+Interop.h"; sourceTree = "<group>"; };
-		75CE04B41DF56ECC00BBB700 /* Configuration+Interop.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = "Configuration+Interop.mm"; path = "Categories/Configuration+Interop.mm"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		754FF69B1DFD7E0B00ACADAC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				754FF6AC1DFD81D400ACADAC /* libresolv.9.tbd in Frameworks */,
+				754FF6AD1DFD81F100ACADAC /* libmessenger.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		75CE04821DF56D0A00BBB700 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				75CE04BC1DF571B500BBB700 /* libresolv.9.tbd in Frameworks */,
-				75CE049F1DF56D4D00BBB700 /* libmessenger.a in Frameworks */,
+				754FF6A61DFD7E0B00ACADAC /* MessengerKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7527EF8A1DFDA55A009FF0D6 /* Callbacks */ = {
+			isa = PBXGroup;
+			children = (
+				754FF6B21DFD84A300ACADAC /* LoginCallback.h */,
+				754FF6B71DFD84A300ACADAC /* MessagesObserver.h */,
+				754FF6BC1DFD84A300ACADAC /* RequestUsersCallback.h */,
+			);
+			name = Callbacks;
+			path = Model;
+			sourceTree = "<group>";
+		};
+		754FF6A01DFD7E0B00ACADAC /* MessengerKit */ = {
+			isa = PBXGroup;
+			children = (
+				7527EF8A1DFDA55A009FF0D6 /* Callbacks */,
+				754FF6AE1DFD84A300ACADAC /* Model */,
+				754FF6C21DFD84A300ACADAC /* Categories */,
+				754FF6A11DFD7E0B00ACADAC /* MessengerKit.h */,
+				754FF6A21DFD7E0B00ACADAC /* Info.plist */,
+			);
+			path = MessengerKit;
+			sourceTree = "<group>";
+		};
+		754FF6AE1DFD84A300ACADAC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				754FF6AF1DFD84A300ACADAC /* Configuration.h */,
+				754FF6B01DFD84A300ACADAC /* Configuration.m */,
+				754FF6B31DFD84A300ACADAC /* Message.h */,
+				754FF6B41DFD84A300ACADAC /* Message.m */,
+				754FF6B51DFD84A300ACADAC /* MessageContent.h */,
+				754FF6B61DFD84A300ACADAC /* MessageContent.m */,
+				754FF6B81DFD84A300ACADAC /* MessageStatusNotification.h */,
+				754FF6B91DFD84A300ACADAC /* MessageStatusNotification.m */,
+				754FF6BA1DFD84A300ACADAC /* Messenger.h */,
+				754FF6BB1DFD84A300ACADAC /* Messenger.mm */,
+				754FF6BD1DFD84A300ACADAC /* SecurityPolicy.h */,
+				754FF6BE1DFD84A300ACADAC /* SecurityPolicy.m */,
+				754FF6BF1DFD84A300ACADAC /* Types.h */,
+				754FF6C01DFD84A300ACADAC /* User.h */,
+				754FF6C11DFD84A300ACADAC /* User.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		754FF6C21DFD84A300ACADAC /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				754FF6C31DFD84A300ACADAC /* Configuration+Interop.h */,
+				754FF6C41DFD84A300ACADAC /* Configuration+Interop.mm */,
+				754FF6C51DFD84A300ACADAC /* Message+Interop.h */,
+				754FF6C61DFD84A300ACADAC /* Message+Interop.mm */,
+				754FF6C71DFD84A300ACADAC /* MessageContent+Interop.h */,
+				754FF6C81DFD84A300ACADAC /* MessageContent+Interop.mm */,
+				754FF6C91DFD84A300ACADAC /* NSMutableArray+Interop.h */,
+				754FF6CA1DFD84A300ACADAC /* NSMutableArray+Interop.mm */,
+				754FF6CB1DFD84A300ACADAC /* NSString+Interop.h */,
+				754FF6CC1DFD84A300ACADAC /* NSString+Interop.mm */,
+				754FF6CD1DFD84A300ACADAC /* SecurityPolicy+Interop.h */,
+				754FF6CE1DFD84A300ACADAC /* SecurityPolicy+Interop.mm */,
+				754FF6CF1DFD84A300ACADAC /* User+Interop.h */,
+				754FF6D01DFD84A300ACADAC /* User+Interop.mm */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		754FF6F21DFD925300ACADAC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				754FF6F31DFD951500ACADAC /* MessageController.swift */,
+				7527EF881DFDA053009FF0D6 /* AuthController.swift */,
+				7527EF8D1DFDC250009FF0D6 /* UserController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		754FF6FD1DFD9B5D00ACADAC /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				7527EF8B1DFDA5A0009FF0D6 /* Storage.swift */,
+			);
+			name = "Core Data";
+			path = ..;
+			sourceTree = "<group>";
+		};
 		75CE047C1DF56D0A00BBB700 = {
 			isa = PBXGroup;
 			children = (
 				75CE04871DF56D0A00BBB700 /* LeMessenger */,
+				754FF6A01DFD7E0B00ACADAC /* MessengerKit */,
 				75CE04861DF56D0A00BBB700 /* Products */,
 				75CE049D1DF56D4C00BBB700 /* Frameworks */,
 			);
@@ -105,6 +260,7 @@
 			isa = PBXGroup;
 			children = (
 				75CE04851DF56D0A00BBB700 /* LeMessenger.app */,
+				754FF69F1DFD7E0B00ACADAC /* MessengerKit.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -112,9 +268,8 @@
 		75CE04871DF56D0A00BBB700 /* LeMessenger */ = {
 			isa = PBXGroup;
 			children = (
-				75CE04AB1DF56DEE00BBB700 /* LeMessenger-Bridging-Header.h */,
-				75CE04A41DF56D9700BBB700 /* Categories */,
-				75CE04A31DF56D8C00BBB700 /* Model */,
+				754FF6FD1DFD9B5D00ACADAC /* Core Data */,
+				754FF6F21DFD925300ACADAC /* Controller */,
 				75CE04A21DF56D8400BBB700 /* UI */,
 				75CE04881DF56D0A00BBB700 /* AppDelegate.swift */,
 				75CE048C1DF56D0A00BBB700 /* Main.storyboard */,
@@ -122,6 +277,7 @@
 				75CE04971DF56D0A00BBB700 /* Info.plist */,
 				75CE048F1DF56D0A00BBB700 /* LeMessenger.xcdatamodeld */,
 				75BB075F1DF8C2B500983FAE /* GCD.swift */,
+				754FF6921DFC890500ACADAC /* CoreDataStack.swift */,
 			);
 			path = LeMessenger;
 			sourceTree = "<group>";
@@ -141,57 +297,61 @@
 				75CE048A1DF56D0A00BBB700 /* LoginViewController.swift */,
 				7562AC0C1DF60AA100FF74DA /* UsersViewController.swift */,
 				7562AC0E1DF6D47C00FF74DA /* ChatViewController.swift */,
+				754FF6981DFD5D1A00ACADAC /* ServerSettingsViewController.swift */,
 			);
 			name = UI;
 			sourceTree = "<group>";
 		};
-		75CE04A31DF56D8C00BBB700 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				75CE04AC1DF56DEF00BBB700 /* Messenger.h */,
-				75CE04AD1DF56DEF00BBB700 /* Messenger.mm */,
-				75CE04B01DF56E3300BBB700 /* Configuration.h */,
-				75CE04B11DF56E3300BBB700 /* Configuration.m */,
-				7562ABEF1DF57E2900FF74DA /* SecurityPolicy.h */,
-				7562ABF01DF57E2900FF74DA /* SecurityPolicy.m */,
-				7562ABFB1DF5818B00FF74DA /* User.h */,
-				7562ABFC1DF5818B00FF74DA /* User.m */,
-				7562AC081DF5C69100FF74DA /* LoginCallback.h */,
-				7562AC0A1DF5ED1C00FF74DA /* RequestUsersCallback.h */,
-				7562AC0B1DF5F60600FF74DA /* MessagesObserver.h */,
-				7519C8481DF88ED800427F72 /* Types.h */,
-				7519C84F1DF8A20A00427F72 /* MessageContent.h */,
-				7519C8501DF8A20A00427F72 /* MessageContent.m */,
-				7519C8521DF8A25900427F72 /* Message.h */,
-				7519C8531DF8A25900427F72 /* Message.m */,
-			);
-			name = Model;
-			sourceTree = "<group>";
-		};
-		75CE04A41DF56D9700BBB700 /* Categories */ = {
-			isa = PBXGroup;
-			children = (
-				75CE04B31DF56ECC00BBB700 /* Configuration+Interop.h */,
-				75CE04B41DF56ECC00BBB700 /* Configuration+Interop.mm */,
-				7562ABF81DF580C700FF74DA /* SecurityPolicy+Interop.h */,
-				7562ABF91DF580C700FF74DA /* SecurityPolicy+Interop.mm */,
-				7562ABFE1DF583AB00FF74DA /* User+Interop.h */,
-				7562ABFF1DF583AB00FF74DA /* User+Interop.mm */,
-				7562AC041DF5886200FF74DA /* NSString+Interop.h */,
-				7562AC051DF5886200FF74DA /* NSString+Interop.mm */,
-				75BB07561DF8B76D00983FAE /* Message+Interop.h */,
-				75BB07571DF8B76D00983FAE /* Message+Interop.mm */,
-				75BB07591DF8B78400983FAE /* MessageContent+Interop.h */,
-				75BB075A1DF8B78400983FAE /* MessageContent+Interop.mm */,
-				75BB075C1DF8BF4000983FAE /* NSMutableArray+Interop.h */,
-				75BB075D1DF8BF4000983FAE /* NSMutableArray+Interop.mm */,
-			);
-			name = Categories;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		754FF69C1DFD7E0B00ACADAC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				754FF6E81DFD84A300ACADAC /* MessageContent+Interop.h in Headers */,
+				754FF6D91DFD84A300ACADAC /* MessagesObserver.h in Headers */,
+				754FF6D51DFD84A300ACADAC /* Message.h in Headers */,
+				754FF6F01DFD84A300ACADAC /* User+Interop.h in Headers */,
+				754FF6DC1DFD84A300ACADAC /* Messenger.h in Headers */,
+				754FF6EA1DFD84A300ACADAC /* NSMutableArray+Interop.h in Headers */,
+				754FF6D41DFD84A300ACADAC /* LoginCallback.h in Headers */,
+				754FF6A31DFD7E0B00ACADAC /* MessengerKit.h in Headers */,
+				754FF6D71DFD84A300ACADAC /* MessageContent.h in Headers */,
+				754FF6E61DFD84A300ACADAC /* Message+Interop.h in Headers */,
+				754FF6DE1DFD84A300ACADAC /* RequestUsersCallback.h in Headers */,
+				754FF6E21DFD84A300ACADAC /* User.h in Headers */,
+				754FF6EC1DFD84A300ACADAC /* NSString+Interop.h in Headers */,
+				754FF6EE1DFD84A300ACADAC /* SecurityPolicy+Interop.h in Headers */,
+				754FF6E11DFD84A300ACADAC /* Types.h in Headers */,
+				754FF6E41DFD84A300ACADAC /* Configuration+Interop.h in Headers */,
+				754FF6D11DFD84A300ACADAC /* Configuration.h in Headers */,
+				754FF6DF1DFD84A300ACADAC /* SecurityPolicy.h in Headers */,
+				754FF6DA1DFD84A300ACADAC /* MessageStatusNotification.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		754FF69E1DFD7E0B00ACADAC /* MessengerKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 754FF6A81DFD7E0B00ACADAC /* Build configuration list for PBXNativeTarget "MessengerKit" */;
+			buildPhases = (
+				754FF69A1DFD7E0B00ACADAC /* Sources */,
+				754FF69B1DFD7E0B00ACADAC /* Frameworks */,
+				754FF69C1DFD7E0B00ACADAC /* Headers */,
+				754FF69D1DFD7E0B00ACADAC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MessengerKit;
+			productName = MessengerKit;
+			productReference = 754FF69F1DFD7E0B00ACADAC /* MessengerKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		75CE04841DF56D0A00BBB700 /* LeMessenger */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 75CE049A1DF56D0A00BBB700 /* Build configuration list for PBXNativeTarget "LeMessenger" */;
@@ -199,10 +359,12 @@
 				75CE04811DF56D0A00BBB700 /* Sources */,
 				75CE04821DF56D0A00BBB700 /* Frameworks */,
 				75CE04831DF56D0A00BBB700 /* Resources */,
+				754FF6AB1DFD7E0B00ACADAC /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				754FF6A51DFD7E0B00ACADAC /* PBXTargetDependency */,
 			);
 			name = LeMessenger;
 			productName = LeMessenger;
@@ -219,8 +381,14 @@
 				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = Kaspersky;
 				TargetAttributes = {
+					754FF69E1DFD7E0B00ACADAC = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = G9EJHD637F;
+						ProvisioningStyle = Automatic;
+					};
 					75CE04841DF56D0A00BBB700 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = G9EJHD637F;
 						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
@@ -240,11 +408,19 @@
 			projectRoot = "";
 			targets = (
 				75CE04841DF56D0A00BBB700 /* LeMessenger */,
+				754FF69E1DFD7E0B00ACADAC /* MessengerKit */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		754FF69D1DFD7E0B00ACADAC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		75CE04831DF56D0A00BBB700 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -257,34 +433,55 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		754FF69A1DFD7E0B00ACADAC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				754FF6E31DFD84A300ACADAC /* User.m in Sources */,
+				754FF6EF1DFD84A300ACADAC /* SecurityPolicy+Interop.mm in Sources */,
+				754FF6DD1DFD84A300ACADAC /* Messenger.mm in Sources */,
+				754FF6D61DFD84A300ACADAC /* Message.m in Sources */,
+				754FF6DB1DFD84A300ACADAC /* MessageStatusNotification.m in Sources */,
+				754FF6F11DFD84A300ACADAC /* User+Interop.mm in Sources */,
+				754FF6E51DFD84A300ACADAC /* Configuration+Interop.mm in Sources */,
+				754FF6D21DFD84A300ACADAC /* Configuration.m in Sources */,
+				754FF6EB1DFD84A300ACADAC /* NSMutableArray+Interop.mm in Sources */,
+				754FF6E91DFD84A300ACADAC /* MessageContent+Interop.mm in Sources */,
+				754FF6ED1DFD84A300ACADAC /* NSString+Interop.mm in Sources */,
+				754FF6E71DFD84A300ACADAC /* Message+Interop.mm in Sources */,
+				754FF6E01DFD84A300ACADAC /* SecurityPolicy.m in Sources */,
+				754FF6D81DFD84A300ACADAC /* MessageContent.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		75CE04811DF56D0A00BBB700 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7562ABF11DF57E2900FF74DA /* SecurityPolicy.m in Sources */,
-				75BB075B1DF8B78400983FAE /* MessageContent+Interop.mm in Sources */,
+				754FF6931DFC890500ACADAC /* CoreDataStack.swift in Sources */,
+				7527EF8C1DFDA5A0009FF0D6 /* Storage.swift in Sources */,
+				754FF6F41DFD951500ACADAC /* MessageController.swift in Sources */,
+				754FF6991DFD5D1A00ACADAC /* ServerSettingsViewController.swift in Sources */,
 				7562AC0D1DF60AA100FF74DA /* UsersViewController.swift in Sources */,
-				7562ABFA1DF580C700FF74DA /* SecurityPolicy+Interop.mm in Sources */,
-				75CE04B21DF56E3300BBB700 /* Configuration.m in Sources */,
-				7562AC001DF583AB00FF74DA /* User+Interop.mm in Sources */,
-				7519C8491DF88ED800427F72 /* Types.h in Sources */,
 				75CE04911DF56D0A00BBB700 /* LeMessenger.xcdatamodeld in Sources */,
-				75BB075E1DF8BF4000983FAE /* NSMutableArray+Interop.mm in Sources */,
+				7527EF8E1DFDC250009FF0D6 /* UserController.swift in Sources */,
 				75CE048B1DF56D0A00BBB700 /* LoginViewController.swift in Sources */,
 				75BB07601DF8C2B500983FAE /* GCD.swift in Sources */,
-				7519C8511DF8A20A00427F72 /* MessageContent.m in Sources */,
-				7519C8541DF8A25900427F72 /* Message.m in Sources */,
-				7562ABFD1DF5818B00FF74DA /* User.m in Sources */,
+				7527EF891DFDA053009FF0D6 /* AuthController.swift in Sources */,
 				75CE04891DF56D0A00BBB700 /* AppDelegate.swift in Sources */,
-				75BB07581DF8B76D00983FAE /* Message+Interop.mm in Sources */,
 				7562AC0F1DF6D47C00FF74DA /* ChatViewController.swift in Sources */,
-				75CE04B51DF56ECC00BBB700 /* Configuration+Interop.mm in Sources */,
-				75CE04AE1DF56DEF00BBB700 /* Messenger.mm in Sources */,
-				7562AC061DF5886200FF74DA /* NSString+Interop.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		754FF6A51DFD7E0B00ACADAC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 754FF69E1DFD7E0B00ACADAC /* MessengerKit */;
+			targetProxy = 754FF6A41DFD7E0B00ACADAC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		75CE048C1DF56D0A00BBB700 /* Main.storyboard */ = {
@@ -298,6 +495,66 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		754FF6A91DFD7E0B00ACADAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = G9EJHD637F;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/LibMessenger/include",
+				);
+				INFOPLIST_FILE = MessengerKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/LibMessenger",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kaspersky.MessengerKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		754FF6AA1DFD7E0B00ACADAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = G9EJHD637F;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/LibMessenger/include",
+				);
+				INFOPLIST_FILE = MessengerKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/LibMessenger",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kaspersky.MessengerKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		75CE04981DF56D0A00BBB700 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -398,6 +655,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = G9EJHD637F;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = "${TARGET_BUILD_DIR}/MessengerKit.framework";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/LibMessenger/include",
@@ -421,6 +681,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = G9EJHD637F;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = "${TARGET_BUILD_DIR}/MessengerKit.framework";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/LibMessenger/include",
@@ -441,6 +704,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		754FF6A81DFD7E0B00ACADAC /* Build configuration list for PBXNativeTarget "MessengerKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				754FF6A91DFD7E0B00ACADAC /* Debug */,
+				754FF6AA1DFD7E0B00ACADAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		75CE04801DF56D0A00BBB700 /* Build configuration list for PBXProject "LeMessenger" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
