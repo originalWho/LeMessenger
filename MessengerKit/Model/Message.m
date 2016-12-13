@@ -15,6 +15,7 @@
 @synthesize content = _content;
 @synthesize sender = _sender;
 @synthesize status = _status;
+@synthesize seen = _seen;
 
 - (instancetype) init
 {
@@ -34,6 +35,7 @@
         _content = content;
         _sender = nil;
         _status = Sending;
+        _seen = false;
     }
     return self;
 }

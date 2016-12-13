@@ -12,6 +12,7 @@ class MessageController : NSObject {
     
     let messenger = Messenger.shared()
     let storage = Storage.shared
+    var unseenMessages : Int = 0
     
     static let shared : MessageController = {
         let instance = MessageController()
@@ -42,6 +43,7 @@ class MessageController : NSObject {
             message?.sender = "You"
             self.storage.messages[recepient]?.append(message!)
             self.storage.messageToUser[message!.identifier] = recepient
+            //self.storage.sortUsersByLastMessage()
             completion()
         })
     }
@@ -53,6 +55,21 @@ class MessageController : NSObject {
         }
         self.storage.messages[message.sender]!.append(message)
         self.storage.messageToUser[message.identifier] = message.sender
+        self.unseenMessages += 1
+        let messageString : String
+        switch message.content.type {
+        case .Text:
+            messageString = String(data: message.content.data, encoding: .utf8)!
+            break
+        case .Image:
+            messageString = "📷 Image"
+            break
+        case .Video:
+            messageString = "🎥 Video"
+            break
+        }        
+        NotificationController.shared.notify(userId: message.sender, message: messageString, unseen: unseenMessages)
+        //self.storage.sortUsersByLastMessage()
     }
  
     func changeMessageStatus(notification : Notification) {
@@ -76,6 +93,14 @@ class MessageController : NSObject {
     
     func sendMessageSeen(recepientId: String, messageId: String) {
         messenger?.sendMessageSeen(recepientId, messageId: messageId)
+        NotificationController.shared.removeNotifications()
+        for message in self.storage.messages[recepientId]!.reversed() {
+            if message.seen {
+                return
+            }
+            message.seen = true
+            self.unseenMessages -= 1
+        }
     }
     
     func subscribeToMessagesNotifications() {

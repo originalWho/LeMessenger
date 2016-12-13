@@ -7,15 +7,21 @@
 //
 
 import UIKit
+import UserNotifications
 import CoreData
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
+    let notificationDelegate = NotificationController.shared
+    
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        UNUserNotificationCenter.current().delegate = notificationDelegate
+        NotificationController.shared.requestAuthorization()
+        
         if !UserDefaults.standard.bool(forKey: "HasLaunchedBefore") {
             let serverUrl = "127.0.0.1"
             let serverPort = 0

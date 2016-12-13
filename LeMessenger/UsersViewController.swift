@@ -36,7 +36,9 @@ class UsersViewController: UIViewController {
     }
     
     func receiveMessage(notification: Notification) {
-     
+        performUIUpdatesOnMain {
+            self.tableView.reloadData()
+        }
     }
 }
 
@@ -62,8 +64,25 @@ extension UsersViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "UserCell")!
         let user = self.storage.users[(indexPath as NSIndexPath).row]
+        let lastMessage = self.storage.messages[user.userId]?.last
         cell.textLabel?.text = user.userId
-        cell.detailTextLabel?.text = "Last message"
+        if lastMessage == nil {
+            cell.detailTextLabel?.text = ""
+        } else {
+            switch lastMessage!.content.type {
+            case .Text:
+                cell.detailTextLabel?.text = String(data: lastMessage!.content.data, encoding: .utf8)
+            case .Image:
+                cell.detailTextLabel?.text = "📷 Image"
+            case .Video:
+                cell.detailTextLabel?.text = "🎥 Video"
+            }
+            if !lastMessage!.seen && lastMessage?.sender != "You" {
+                cell.backgroundColor = UIColor(red:0.05, green:0.36, blue:0.26, alpha:0.2)
+            } else {
+                cell.backgroundColor = UIColor.clear
+            }
+        }
         return cell
     }
     
@@ -73,6 +92,6 @@ extension UsersViewController: UITableViewDataSource, UITableViewDelegate {
         chatViewController.user = user
         self.navigationController!.pushViewController(chatViewController, animated: true)
         tableView.deselectRow(at: indexPath, animated: true)
+        tableView.reloadData()
     }
-
 }

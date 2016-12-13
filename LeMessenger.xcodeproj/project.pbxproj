@@ -52,6 +52,7 @@
 		754FF6F41DFD951500ACADAC /* MessageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754FF6F31DFD951500ACADAC /* MessageController.swift */; };
 		7562AC0D1DF60AA100FF74DA /* UsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7562AC0C1DF60AA100FF74DA /* UsersViewController.swift */; };
 		7562AC0F1DF6D47C00FF74DA /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7562AC0E1DF6D47C00FF74DA /* ChatViewController.swift */; };
+		75928F741E00379D00824F6C /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75928F731E00379D00824F6C /* NotificationController.swift */; };
 		75BB07601DF8C2B500983FAE /* GCD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75BB075F1DF8C2B500983FAE /* GCD.swift */; };
 		75CE04891DF56D0A00BBB700 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CE04881DF56D0A00BBB700 /* AppDelegate.swift */; };
 		75CE048B1DF56D0A00BBB700 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CE048A1DF56D0A00BBB700 /* LoginViewController.swift */; };
@@ -128,6 +129,7 @@
 		754FF6F31DFD951500ACADAC /* MessageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MessageController.swift; path = Controller/MessageController.swift; sourceTree = "<group>"; };
 		7562AC0C1DF60AA100FF74DA /* UsersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersViewController.swift; sourceTree = "<group>"; };
 		7562AC0E1DF6D47C00FF74DA /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		75928F731E00379D00824F6C /* NotificationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NotificationController.swift; path = Controller/NotificationController.swift; sourceTree = "<group>"; };
 		75BB075F1DF8C2B500983FAE /* GCD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCD.swift; sourceTree = "<group>"; };
 		75CE04851DF56D0A00BBB700 /* LeMessenger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeMessenger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75CE04881DF56D0A00BBB700 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -233,6 +235,7 @@
 				754FF6F31DFD951500ACADAC /* MessageController.swift */,
 				7527EF881DFDA053009FF0D6 /* AuthController.swift */,
 				7527EF8D1DFDC250009FF0D6 /* UserController.swift */,
+				75928F731E00379D00824F6C /* NotificationController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -467,6 +470,7 @@
 				7527EF8E1DFDC250009FF0D6 /* UserController.swift in Sources */,
 				75CE048B1DF56D0A00BBB700 /* LoginViewController.swift in Sources */,
 				75BB07601DF8C2B500983FAE /* GCD.swift in Sources */,
+				75928F741E00379D00824F6C /* NotificationController.swift in Sources */,
 				7527EF891DFDA053009FF0D6 /* AuthController.swift in Sources */,
 				75CE04891DF56D0A00BBB700 /* AppDelegate.swift in Sources */,
 				7562AC0F1DF6D47C00FF74DA /* ChatViewController.swift in Sources */,

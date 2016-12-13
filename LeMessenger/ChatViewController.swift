@@ -38,6 +38,12 @@ class ChatViewController: UIViewController {
         sendButton.isEnabled = false
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.estimatedRowHeight = 150
+        for message in self.storage.messages[user!.userId]! {
+            if message.sender == user?.userId && !message.seen {
+                message.seen = true
+                MessageController.shared.sendMessageSeen(recepientId: user!.userId, messageId: message.identifier)
+            }
+        }
     }
     
     @IBAction func sendMessage(_ sender: AnyObject) {

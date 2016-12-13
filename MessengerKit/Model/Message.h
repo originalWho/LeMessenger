@@ -16,6 +16,7 @@
 @property (nonatomic, readonly, strong) MessageContent  *content;
 @property (nonatomic, strong)           NSString        *sender;
 @property (nonatomic)                   MessageStatus   status;
+@property (nonatomic)                   Boolean         seen;
 
 @end
 

@@ -21,4 +21,13 @@ class Storage : NSObject {
         return instance
     }()
     
+    /*
+    func sortUsersByLastMessage() {
+        users.sort { (user1, user2) -> Bool in
+            let time1 = messages[user1.userId]?.last?.time
+            let time2 = messages[user1.userId]?.last?.time
+            return time1! > time2!
+        }
+    }
+    */
 }

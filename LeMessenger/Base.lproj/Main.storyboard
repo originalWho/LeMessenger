@@ -163,18 +163,18 @@
                                         <rect key="frame" x="0.0" y="28" width="343" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2vp-Pg-cFN" id="peB-sy-HLB">
-                                            <frame key="frameInset" width="310" height="43.5"/>
+                                            <frame key="frameInset" width="310" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="nLU-xY-M8f">
-                                                    <frame key="frameInset" minX="15" minY="5" width="33.5" height="20.5"/>
+                                                    <frame key="frameInset" minX="15" minY="4" width="34" height="21"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="kJB-0k-ZLH">
-                                                    <frame key="frameInset" minX="15" minY="25.5" width="32" height="14.5"/>
+                                                    <frame key="frameInset" minX="15" minY="25" width="32" height="15"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" weight="thin" pointSize="12"/>
                                                     <nil key="textColor"/>
@@ -332,7 +332,7 @@
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="200" id="KFQ-Da-V1A"/>
                                                     </constraints>
-                                                    <variation key="heightClass=compact-widthClass=compact" image="D08A2D47-D939-4E21-809A-DF9E12869F05"/>
+                                                    <variation key="heightClass=compact-widthClass=compact" image="9C3B68E7-205F-443B-B3B1-6D85AF6BDC47"/>
                                                 </imageView>
                                             </subviews>
                                             <constraints>
