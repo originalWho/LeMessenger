@@ -20,10 +20,21 @@
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
+	<key>Configuration</key>
+	<dict>
+		<key>Server port</key>
+		<integer>0</integer>
+		<key>Server url</key>
+		<string>127.0.0.1</string>
+	</dict>
+	<key>LSApplicationCategoryType</key>
+	<string></string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Sending Photos</string>
 	<key>UILaunchStoryboardName</key>
-	<string>LaunchScreen</string>
+	<string>LaunchScreen.storyboard</string>
 	<key>UIMainStoryboardFile</key>
 	<string>Main</string>
 	<key>UIRequiredDeviceCapabilities</key>
@@ -36,17 +47,6 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-	<key>Configuration</key>
-	<dict>
-		<key>Server url</key>
-		<string>127.0.0.1</string>
-		<key>Server port</key>
-		<integer>0</integer>
-	</dict>
-	<key>NSPhotoLibraryUsageDescription</key>
-	<string>Sending Photos</string>
-	<key>LSApplicationCategoryType</key>
-	<string></string>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>

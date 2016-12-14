@@ -22,10 +22,6 @@
 
 - (void) loginWithUserId: (NSString *)                  userId
                 password: (NSString *)                  password
-              completion: (void (^)(OperationResult))   completion;
-
-- (void) loginWithUserId: (NSString *)                  userId
-                password: (NSString *)                  password
           securityPolicy: (SecurityPolicy *)            securityPolicy
               completion: (void (^)(OperationResult))   completion;
 

@@ -23,13 +23,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         NotificationController.shared.requestAuthorization()
         
         if !UserDefaults.standard.bool(forKey: "HasLaunchedBefore") {
-            let serverUrl = "127.0.0.1"
-            let serverPort = 0
+            let serverUrl: String = "127.0.0.1"
+            let serverPort: Int = 0
             UserDefaults.standard.set(true, forKey: "HasLaunchedBefore")
             UserDefaults.standard.set(serverUrl, forKey: "Server Url")
+            UserDefaults.standard.set("GOSH", forKey: "oh")
             UserDefaults.standard.set(serverPort, forKey: "Server Port")
-            UserDefaults.standard.synchronize()
+            //UserDefaults.standard.synchronize()
         }
+        print(UserDefaults.standard.value(forKey: "oh") ?? "GOOOOOOOOSHFUCK")
+        print(UserDefaults.standard.value(forKey: "Server Url"))
+        print(UserDefaults.standard.integer(forKey: "Server Port"))
         return true
     }
 

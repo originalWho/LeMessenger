@@ -6,7 +6,6 @@
 //  Copyright © 2016 Kaspersky. All rights reserved.
 //
 
-import UIKit
 import UserNotifications
 
 class NotificationController: NSObject, UNUserNotificationCenterDelegate {
@@ -22,7 +21,7 @@ class NotificationController: NSObject, UNUserNotificationCenterDelegate {
     
     func requestAuthorization() {
         center.requestAuthorization(options: authOptions) { (granted, error) in
-            //enable disable features
+            
         }
     }
     
@@ -54,14 +53,10 @@ class NotificationController: NSObject, UNUserNotificationCenterDelegate {
     }
     
     func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
-        
-        
         completionHandler(presentationOptions)
     }
     
     func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
-        
-        
         completionHandler()
     }
 }

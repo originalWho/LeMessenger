@@ -12,6 +12,7 @@ class MessageController : NSObject {
     
     let messenger = Messenger.shared()
     let storage = Storage.shared
+    let encryption = EncryptionController.shared
     var unseenMessages : Int = 0
     
     static let shared : MessageController = {
@@ -19,37 +20,59 @@ class MessageController : NSObject {
         return instance
     }()
     
-    func sendMessage(recepient: String, content: AnyObject, completion: @escaping (Void) -> Void) {
+    func sendMessage(recepient: User?, content: AnyObject?, completion: @escaping () -> Void) {
         let messageContent = MessageContent.init()
         
-        if AuthController.shared.encrypted {
-            messageContent.encrypted = true
-        } else {
+        let userId = recepient?.userId!
+        
+        switch recepient!.securityPolicy.encryptionAlgo {
+        case .None:
             messageContent.encrypted = false
+            break
+        case .RSA_1024:
+            messageContent.encrypted = true
+            break
         }
+        
+        var data: Data?
         
         if content is String {
             messageContent.type = .Text
-            messageContent.data = (content as! String).data(using: .utf8)
+            data = (content as! String).data(using: .utf8)
         } else if content is UIImage {
             messageContent.type = .Image
             let image = content as! UIImage
-            messageContent.data = UIImageJPEGRepresentation(image, 0.6)
+            data = UIImageJPEGRepresentation(image, 0.6)
         } else {
             messageContent.type = .Video
             //Convert to video
         }
-        messenger?.sendMessage(recepient, content: messageContent, completion: { (message) in
+        
+        if messageContent.encrypted {
+            let publicKey = recepient?.securityPolicy.encryptionPubKey
+            messageContent.data = encryption.encrypt(messageData: data, publicKey: publicKey)
+        } else {
+            messageContent.data = data
+        }
+        
+        messenger?.sendMessage(userId, content: messageContent, completion: { (message) in
             message?.sender = "You"
-            self.storage.messages[recepient]?.append(message!)
-            self.storage.messageToUser[message!.identifier] = recepient
-            //self.storage.sortUsersByLastMessage()
+            self.storage.messages[userId!]?.append(message!)
+            self.storage.messageToUser[message!.identifier] = userId
             completion()
         })
     }
     
     func receiveMessage(notification : Notification) {
-        let message = notification.object as! Message
+        guard let message = notification.object as? Message else {
+            print("Unable to receive a message: message is nil")
+            return
+        }
+        
+        if message.content.encrypted {
+            message.content.data = encryption.decrypt(messageData: message.content.data)
+        }
+        
         if self.storage.messages[message.sender] == nil {
             self.storage.messages[message.sender] = [Message]()
         }
@@ -69,7 +92,6 @@ class MessageController : NSObject {
             break
         }        
         NotificationController.shared.notify(userId: message.sender, message: messageString, unseen: unseenMessages)
-        //self.storage.sortUsersByLastMessage()
     }
  
     func changeMessageStatus(notification : Notification) {
@@ -81,8 +103,8 @@ class MessageController : NSObject {
             if self.storage.messages[user!] == nil  {
                 self.storage.messages[user!] = [Message]()
             } else {
-                for message in self.storage.messages[user!]! {
-                    if message.identifier == id {
+                for message in self.storage.messages[user!]!.reversed() {
+                    if message.identifier == id && message.sender == "You" {
                         message.status = status
                         return
                     }
@@ -102,7 +124,7 @@ class MessageController : NSObject {
             self.unseenMessages -= 1
         }
     }
-    
+
     func subscribeToMessagesNotifications() {
         NotificationCenter.default.addObserver(self, selector: #selector(receiveMessage(notification:)), name: NSNotification.Name(rawValue: "MessageReceived"), object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(changeMessageStatus(notification:)), name: NSNotification.Name(rawValue: "MessageStatusChanged"), object: nil)

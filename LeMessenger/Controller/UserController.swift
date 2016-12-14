@@ -6,8 +6,6 @@
 //  Copyright © 2016 Kaspersky. All rights reserved.
 //
 
-import UIKit
-
 class UserController: NSObject {
     let messenger = Messenger.shared()
     let storage = Storage.shared

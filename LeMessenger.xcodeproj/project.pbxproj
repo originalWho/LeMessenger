@@ -53,6 +53,8 @@
 		7562AC0D1DF60AA100FF74DA /* UsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7562AC0C1DF60AA100FF74DA /* UsersViewController.swift */; };
 		7562AC0F1DF6D47C00FF74DA /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7562AC0E1DF6D47C00FF74DA /* ChatViewController.swift */; };
 		75928F741E00379D00824F6C /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75928F731E00379D00824F6C /* NotificationController.swift */; };
+		75928F771E0061EA00824F6C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75928F751E0061EA00824F6C /* LaunchScreen.storyboard */; };
+		75928F7B1E00AB0100824F6C /* EncryptionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75928F7A1E00AB0100824F6C /* EncryptionController.swift */; };
 		75BB07601DF8C2B500983FAE /* GCD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75BB075F1DF8C2B500983FAE /* GCD.swift */; };
 		75CE04891DF56D0A00BBB700 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CE04881DF56D0A00BBB700 /* AppDelegate.swift */; };
 		75CE048B1DF56D0A00BBB700 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CE048A1DF56D0A00BBB700 /* LoginViewController.swift */; };
@@ -130,6 +132,8 @@
 		7562AC0C1DF60AA100FF74DA /* UsersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersViewController.swift; sourceTree = "<group>"; };
 		7562AC0E1DF6D47C00FF74DA /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		75928F731E00379D00824F6C /* NotificationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NotificationController.swift; path = Controller/NotificationController.swift; sourceTree = "<group>"; };
+		75928F761E0061EA00824F6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		75928F7A1E00AB0100824F6C /* EncryptionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EncryptionController.swift; path = Controller/EncryptionController.swift; sourceTree = "<group>"; };
 		75BB075F1DF8C2B500983FAE /* GCD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCD.swift; sourceTree = "<group>"; };
 		75CE04851DF56D0A00BBB700 /* LeMessenger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeMessenger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75CE04881DF56D0A00BBB700 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -236,6 +240,7 @@
 				7527EF881DFDA053009FF0D6 /* AuthController.swift */,
 				7527EF8D1DFDC250009FF0D6 /* UserController.swift */,
 				75928F731E00379D00824F6C /* NotificationController.swift */,
+				75928F7A1E00AB0100824F6C /* EncryptionController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -276,6 +281,7 @@
 				75CE04A21DF56D8400BBB700 /* UI */,
 				75CE04881DF56D0A00BBB700 /* AppDelegate.swift */,
 				75CE048C1DF56D0A00BBB700 /* Main.storyboard */,
+				75928F751E0061EA00824F6C /* LaunchScreen.storyboard */,
 				75CE04921DF56D0A00BBB700 /* Assets.xcassets */,
 				75CE04971DF56D0A00BBB700 /* Info.plist */,
 				75CE048F1DF56D0A00BBB700 /* LeMessenger.xcdatamodeld */,
@@ -428,6 +434,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75928F771E0061EA00824F6C /* LaunchScreen.storyboard in Resources */,
 				75CE04931DF56D0A00BBB700 /* Assets.xcassets in Resources */,
 				75CE048E1DF56D0A00BBB700 /* Main.storyboard in Resources */,
 			);
@@ -471,6 +478,7 @@
 				75CE048B1DF56D0A00BBB700 /* LoginViewController.swift in Sources */,
 				75BB07601DF8C2B500983FAE /* GCD.swift in Sources */,
 				75928F741E00379D00824F6C /* NotificationController.swift in Sources */,
+				75928F7B1E00AB0100824F6C /* EncryptionController.swift in Sources */,
 				7527EF891DFDA053009FF0D6 /* AuthController.swift in Sources */,
 				75CE04891DF56D0A00BBB700 /* AppDelegate.swift in Sources */,
 				7562AC0F1DF6D47C00FF74DA /* ChatViewController.swift in Sources */,
@@ -488,6 +496,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		75928F751E0061EA00824F6C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				75928F761E0061EA00824F6C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
 		75CE048C1DF56D0A00BBB700 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

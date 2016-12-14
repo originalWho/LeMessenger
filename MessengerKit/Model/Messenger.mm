@@ -60,7 +60,7 @@
             receivedMessage.sender = [NSString stringWithUTF8String: senderId.c_str()];
             [[NSNotificationCenter defaultCenter] postNotificationName: @"MessageReceived"
                                                                 object: receivedMessage
-             ];
+            ];
         };
         _messagesObserver->statusChangedhandler = ^(const messenger::MessageId& msgId, messenger::message_status::Type status) {
             MessageStatus messageStatus;
@@ -83,7 +83,7 @@
             }
             MessageStatusNotification *notification = [[[MessageStatusNotification class] alloc]
                                                         initWithId: [NSString stringWithUTF8String: msgId.c_str()]
-                                                                                            status: messageStatus];
+                                                            status: messageStatus];
             [[NSNotificationCenter defaultCenter] postNotificationName: @"MessageStatusChanged"
                                                                 object: notification];
             
@@ -91,16 +91,6 @@
     }
     
     return self;
-}
-
-- (void) loginWithUserId: (NSString *)                userId
-                password: (NSString *)                password
-              completion: (void (^)(OperationResult)) completion
-{
-    [self loginWithUserId: userId
-                 password: password
-           securityPolicy: nil
-               completion: completion];
 }
 
 - (void) loginWithUserId: (NSString *)                userId
@@ -171,6 +161,8 @@
     if (completion) {
         Message *sentMessage = [[[Message class] alloc] initWithMessageStruct: message];
         sentMessage.sender = @"You";
+        [[NSNotificationCenter defaultCenter] postNotificationName: @"MessageSent"
+                                                            object: nil];
         completion(sentMessage);
     }
 }

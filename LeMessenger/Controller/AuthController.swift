@@ -6,8 +6,6 @@
 //  Copyright © 2016 Kaspersky. All rights reserved.
 //
 
-import UIKit
-
 class AuthController: NSObject {
 
     let messenger = Messenger.shared()
@@ -20,9 +18,12 @@ class AuthController: NSObject {
     
     func login(username : String, password : String, completion : @escaping (_ result : OperationResult) -> Void) {
         let policy = SecurityPolicy.init()
+        
         if encrypted {
             policy.encryptionAlgo = .RSA_1024
-            //policy.encryptionPubKey =
+            EncryptionController.shared.generateKeyPair { (publicKey) in
+                //assign encryption public key
+            }
         }
         messenger?.login(withUserId: username, password: password, securityPolicy: policy, completion: { (result) in
             completion(result)

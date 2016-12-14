@@ -48,7 +48,7 @@ class ChatViewController: UIViewController {
     
     @IBAction func sendMessage(_ sender: AnyObject) {
         let message = messageTextField.text!
-        MessageController.shared.sendMessage(recepient: (user?.userId)!, content: message as AnyObject) {
+        MessageController.shared.sendMessage(recepient: user!, content: message as AnyObject) {
             self.messageTextField.text = ""
             self.sendButton.isEnabled = false
             self.reload(scrollToBottom: true)
@@ -146,7 +146,7 @@ extension ChatViewController : UITableViewDelegate, UITableViewDataSource {
 extension ChatViewController : UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         if let image = info[UIImagePickerControllerOriginalImage] as? UIImage {
-            MessageController.shared.sendMessage(recepient: user!.userId!, content: image, completion: {
+            MessageController.shared.sendMessage(recepient: user!, content: image, completion: {
                 
             })
         }

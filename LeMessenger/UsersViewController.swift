@@ -30,12 +30,12 @@ class UsersViewController: UIViewController {
     
     func requestUsers() {
         UserController.shared.requestUsers { (result) in
-            self.tableView.reloadData()
+            self.reloadData(notification: nil)
             self.tableView.refreshControl?.endRefreshing()
         }
     }
     
-    func receiveMessage(notification: Notification) {
+    func reloadData(notification: Notification?) {
         performUIUpdatesOnMain {
             self.tableView.reloadData()
         }
@@ -44,13 +44,13 @@ class UsersViewController: UIViewController {
 
 extension UsersViewController {
     func subscribeToMessagesNotifications() {
-        NotificationCenter.default.addObserver(self, selector: #selector(receiveMessage(notification:)), name: NSNotification.Name(rawValue: "MessageReceived"), object: nil)
-        //NotificationCenter.default.addObserver(self, selector: #selector(messageStatusChanged(notification:)), name: NSNotification.Name(rawValue: "MessageStatusChanged"), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(reloadData(notification:)), name: NSNotification.Name(rawValue: "MessageReceived"), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(reloadData(notification:)), name: NSNotification.Name(rawValue: "MessageSent"), object: nil)
     }
     
     func unsubscribeToMessagesNotifications() {
         NotificationCenter.default.removeObserver(self, name: NSNotification.Name(rawValue: "MessageReceived"), object: nil)
-        //NotificationCenter.default.removeObserver(self, name: NSNotification.Name(rawValue: "MessageStatusChanged"), object: nil)
+        NotificationCenter.default.removeObserver(self, name: NSNotification.Name(rawValue: "MessageSent"), object: nil)
     }
 }
 
